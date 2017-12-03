@@ -10,7 +10,11 @@ gem 'bootstrap-sass', '~> 3.3.7'
 
 gem 'jquery-rails'
 
+#for login/register/forgot-password
 gem 'devise'
+
+#for profile pictures
+gem 'carrierwave'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.3'
