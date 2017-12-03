@@ -1,0 +1,30 @@
+<% if user_signed_in? %>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+    <span class="glyphicon glyphicon-menu-hamburger"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">Phases</a></li>
+      <li><a href="#">Jobs</a></li>
+      <li><a href="#">JavaScript</a></li>
+      <li class="divider"></li>
+      <li><a href="#">About Us</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><i class="fa fa-user-o" aria-hidden="true"></i><%= link_to 'Edit Settings', edit_user_registration_path %></li>
+      <li><i class="fa fa-sign-out" aria-hidden="true"></i><%= link_to 'Log Out', destroy_user_session_path, method: :delete %></li>
+    </ul>
+  </div>
+</nav>
+  <%= render 'shared/flash_messages' %>
+<% else %>
+  <div class = "container">
+    <div class = "panel panel-default">
+      <div class = "panel-body">
+        <img src="/app/assets/images/logo.jpg" alt="Logo">
+        <a class="navbar-brand" href="/">RMS</a>
+      </div>
+    </div>
+  </div>
+
+<% end %>
