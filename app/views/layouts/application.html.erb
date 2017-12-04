@@ -8,19 +8,19 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <link href="https://fonts.googleapis.com/css?family=Freckle+Face" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   </head>
 
   <body>
 
-  <div class = "wrap">
     <%= render 'shared/nav' %>
     <div class="container-fluid">
       <div class="row">
         <%= yield %>
       </div>
     </div>
-  </div><!-- wrap -->
 
     <%= render 'shared/foot' %>
   </body>
