@@ -1,5 +1,12 @@
+/*--- Fonts ---*/
 $title-font: 'Abril Fatface', cursive;
 $primary-font: 'Open Sans', sans-serif;
+
+/*--- Colors ---*/
+$primary-blue: #004853;
+$secondary-blue: #326c75;
+$primary-red: #F63700;
+$secondary-red: #f75e32;
 
 body {
   margin: 0;
@@ -7,6 +14,53 @@ body {
   font-family: $primary-font !important;
 }
 
-.app-title {
+.app_title {
   font-family: $title-font;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    color: $primary-red;
+  }
+}
+
+.page_title {
+  text-align: center;
+}
+
+form.new_user {
+  margin: 25px 0;
+
+  .field {
+    margin-bottom: 15px;
+
+    input#user_email,
+    input#user_password {
+      border: 0;
+      border-bottom: 2px solid;
+      width: 100%;
+      height: 35px;
+    }
+  }
+  
+  .actions {
+    .login_btn {
+      width: 100%;
+      padding: 10px 0;
+      border: 0;
+      color: #FFF;
+      text-transform: uppercase;
+      font-weight: 600;
+      background-color: $primary-blue; 
+    }
+
+    .login_btn:hover {
+      background-color: $secondary-blue;
+      transition: 0.2s ease-in-out; 
+    }
+  }
+}
+
+.links {
+  text-align: center; 
 }
