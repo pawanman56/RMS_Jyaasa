@@ -29,6 +29,7 @@
         .dropdown-menu li:hover {
           background-color: $secondary-blue;
           transition: 0.2s ease-in-out;
+          cursor: default;
           
           a {
             color: #FFF;

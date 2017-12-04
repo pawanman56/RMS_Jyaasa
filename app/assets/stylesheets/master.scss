@@ -55,7 +55,8 @@ body {
   text-align: center;
 }
 
-form.new_user {
+form.new_user,
+form.edit_user {
   margin: 25px 0;
   
   .field {
@@ -64,7 +65,8 @@ form.new_user {
     input#user_email,
     input#user_password,
     input#user_name,
-    input#user_password_confirmation {
+    input#user_password_confirmation,
+    input#user_current_password {
       border: 0;
       border-bottom: 2px solid;
       width: 100%;
@@ -82,6 +84,7 @@ form.new_user {
       font-weight: 600;
       background-color: $primary-blue;
     }
+
     .login_btn:hover {
       background-color: $secondary-blue;
       transition: 0.2s ease-in-out;
@@ -91,4 +94,20 @@ form.new_user {
 
 .links {
   text-align: center;
+}
+
+.btn-cancel {
+  width: 100%;
+  padding: 10px 0;
+  border: 0;
+  color: #FFF;
+  color: #FFF;
+  text-transform: uppercase;
+  font-weight: 600;
+  background-color: $primary-red;
+}
+
+.btn-cancel:hover {
+  background-color: $secondary-red;
+  transition: 0.2s ease-in-out;
 }
