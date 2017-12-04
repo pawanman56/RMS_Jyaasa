@@ -1,0 +1,15 @@
+$primary-font: 'Freckle Face', cursive;
+$footer-height: 45px;
+
+.wrap {
+  width: auto;
+  max-width:680px;
+  padding: 0 15px;
+  margin-left: auto;
+}
+
+footer > span {
+  padding: 25px;
+  background: grey;
+  color: white;
+}

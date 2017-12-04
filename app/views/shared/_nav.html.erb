@@ -1,0 +1,40 @@
+<% if user_signed_in? %>
+<div class="navbar navbar-default" role="navigation">
+  <div class="drop1">
+    <button class="btn btn-default dropdown-toggle pull-left btn-lg col-xs-1" type="button" data-toggle="dropdown">
+    <span class="glyphicon glyphicon-menu-hamburger"></span><span class="glyphicon glyphicon-menu-down"></span></button>
+    <ul class="dropdown-menu">
+      <li class="active"><a href="#">Phases</a></li>
+      <li><a href="#">Jobs/Posts</a></li>
+      <li><a href="#">New Applicants</a></li>
+      <li><a href="#">Hired List</a></li>
+      <li><a href="#">Short List</a></li>
+    </ul>
+  </div>
+  <div class="drop2">
+    <button class="btn btn-default dropdown-toggle pull-left btn-lg col-xs-.5" type="button" data-toggle="dropdown">
+    <span class="glyphicon glyphicon-plus"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">Add New Candidates</a></li>
+      <li><a href="#">Add New Jobs/Posts</a></li>
+      <li><a href="#">Add New Phase</a></li>
+    </ul>
+  </div>
+  <div class="text-center pull-left col-xs-9">
+    <h4>Recruitment Management System - RMS</h4>
+  </div>
+  <div class="drop3">
+    <button class="btn btn-default dropdown-toggle pull-right btn-lg col-xs-.5" type="button" data-toggle="dropdown">Admin <span class="glyphicon glyphicon-user"></span></button>
+    <ul class="dropdown-menu pull-right">
+      <li><%= link_to 'View Profile', edit_user_registration_path %></li>
+      <li><%= link_to 'Log Out', destroy_user_session_path, method: :delete %></li>
+    </ul>
+  </div>
+</div>
+  <%= render 'shared/flash_messages' %>
+<% else %>
+    <div class="container">
+
+    </div>
+
+<% end %>

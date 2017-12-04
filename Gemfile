@@ -5,17 +5,24 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-
+#For styling  
 gem 'bootstrap-sass', '~> 3.3.7'
+
+#For font-awesome icons
+gem "font-awesome-rails"
 
 gem 'jquery-rails'
 
+#for login/register/forgot-password
 gem 'devise'
+
+#for profile pictures
+gem 'carrierwave'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.3'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+gem 'pg'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
