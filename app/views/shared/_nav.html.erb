@@ -1,40 +1,61 @@
 <% if user_signed_in? %>
-<div class="navbar navbar-default" role="navigation">
-  <div class="drop1">
-    <button class="btn btn-default dropdown-toggle pull-left btn-lg col-xs-1" type="button" data-toggle="dropdown">
-    <span class="glyphicon glyphicon-menu-hamburger"></span><span class="glyphicon glyphicon-menu-down"></span></button>
-    <ul class="dropdown-menu">
-      <li class="active"><a href="#">Phases</a></li>
-      <li><a href="#">Jobs/Posts</a></li>
-      <li><a href="#">New Applicants</a></li>
-      <li><a href="#">Hired List</a></li>
-      <li><a href="#">Short List</a></li>
-    </ul>
-  </div>
-  <div class="drop2">
-    <button class="btn btn-default dropdown-toggle pull-left btn-lg col-xs-.5" type="button" data-toggle="dropdown">
-    <span class="glyphicon glyphicon-plus"></span></button>
-    <ul class="dropdown-menu">
-      <li><a href="#">Add New Candidates</a></li>
-      <li><a href="#">Add New Jobs/Posts</a></li>
-      <li><a href="#">Add New Phase</a></li>
-    </ul>
-  </div>
-  <div class="text-center pull-left col-xs-9">
-    <h4>Recruitment Management System - RMS</h4>
-  </div>
-  <div class="drop3">
-    <button class="btn btn-default dropdown-toggle pull-right btn-lg col-xs-.5" type="button" data-toggle="dropdown">Admin <span class="glyphicon glyphicon-user"></span></button>
-    <ul class="dropdown-menu pull-right">
-      <li><%= link_to 'View Profile', edit_user_registration_path %></li>
-      <li><%= link_to 'Log Out', destroy_user_session_path, method: :delete %></li>
-    </ul>
-  </div>
-</div>
-  <%= render 'shared/flash_messages' %>
-<% else %>
-    <div class="container">
+  <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+    
+    <!--<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
+    </button>-->
 
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <ul class="navbar-nav pd-lf-0">
+        <li class="nav-item dropdown pd-rt-25">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="glyphicon glyphicon-menu-hamburger"></span>
+            <span class="glyphicon glyphicon-menu-down"></span>
+          </a>
+          <div class="dropdown-menu no-padding" aria-labelledby="navbarDropdownMenuLink">
+            <ul class="no-padding">
+              <li><a class="dropdown-item" href="#">Jobs/Posts</a></li>
+              <li><a class="dropdown-item" href="#">New Applicants</a></li>
+              <li><a class="dropdown-item" href="#">Hired List</a></li>
+              <li class="bd-bt-0"><a class="dropdown-item" href="#">Short List</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="glyphicon glyphicon-plus"></span></button>
+          </a>
+          <div class="dropdown-menu no-padding" aria-labelledby="navbarDropdownMenuLink">
+            <ul class="no-padding">
+              <li><a class="dropdown-item" href="#">Add New Candidates</a></li>
+              <li><a class="dropdown-item" href="#">Add New Job/Posts</a></li>
+              <li class="bd-bt-0"><a class="dropdown-item" href="#">Add New Phase</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav pull-right">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Admin <span class="glyphicon glyphicon-user"></span>
+          </a>
+          <div class="admin-menu dropdown-menu no-padding" aria-labelledby="navbarDropdownMenuLink">
+            <ul class="no-padding">
+              <li><%= link_to 'Edit Profile', edit_user_registration_path, class: "dropdown-item" %></li>
+              <li class="bd-bt-0"><%= link_to 'Log Out', destroy_user_session_path, method: :delete, class: "dropdown-item" %></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+
+      <a href="#" class="app_title">Recruitment Management System</a>
     </div>
 
+  </nav>
+
+  <%= render 'shared/flash_messages' %>
 <% end %>

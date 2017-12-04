@@ -14,10 +14,37 @@ body {
   font-family: $primary-font !important;
 }
 
+.no-padding {
+  padding: 0 !important;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+.no-border {
+  border: 0 !important;
+}
+
+.pd-lf-0 {
+  padding-left: 0;
+}
+
+.pd-rt-25 {
+  padding-right: 25px !important;
+}
+
+.bd-bt-0 {
+  border-bottom: 0 !important;
+}
+
+
+
+
+/*--- Login Page ---*/
 .app_title {
   font-family: $title-font;
   text-align: center;
-
   a {
     text-decoration: none;
     color: $primary-red;
@@ -30,7 +57,7 @@ body {
 
 form.new_user {
   margin: 25px 0;
-
+  
   .field {
     margin-bottom: 15px;
 
@@ -44,7 +71,7 @@ form.new_user {
       height: 35px;
     }
   }
-  
+
   .actions {
     .login_btn {
       width: 100%;
@@ -53,16 +80,15 @@ form.new_user {
       color: #FFF;
       text-transform: uppercase;
       font-weight: 600;
-      background-color: $primary-blue; 
+      background-color: $primary-blue;
     }
-
     .login_btn:hover {
       background-color: $secondary-blue;
-      transition: 0.2s ease-in-out; 
+      transition: 0.2s ease-in-out;
     }
   }
 }
 
 .links {
-  text-align: center; 
+  text-align: center;
 }
