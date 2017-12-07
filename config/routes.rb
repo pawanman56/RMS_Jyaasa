@@ -6,5 +6,5 @@ Rails.application.routes.draw do
     root to: 'phases#index', as: :authenticated_root
   end
 
-  root :to => redirect("/users/sign_in")
+  root 'users#index'
 end
