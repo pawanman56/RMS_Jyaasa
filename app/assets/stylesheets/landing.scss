@@ -18,7 +18,7 @@
 	z-index:0;
 	background-image: url('header.jpg');
 	text-align:center;
-	font-family:helvetica;
+    font-family: 'Raleway', sans-serif;	
 
 	#header-text{
 		position: relative;
@@ -27,24 +27,28 @@
 
 		h1{
 			margin:0;
-			font-size:80px;	
-			font-weight:bold;		
+			font-size:60px;	
+			font-weight:bold;	
 		}
 
 		h3{
 			margin-top:0;
-			font-weight:bold;		
+			font-weight:bold;	
+			font-size:20px;
+    		font-family: 'Raleway', sans-serif;
 		}
 
 		p{
 			font-size:20px;
-			margin:10px 15% 10px 15%;
+			margin:0px 15% 10px 15%;
 			color:#a5a5a5;
 			font-weight:bold;		
+			font-family: 'Raleway', sans-serif;
 		}
 
 		span{
-			font-size:19px;
+			font-size:15px;
+			margin-bottom:10px;
 		}
 
 		#header-text-2{
@@ -55,24 +59,53 @@
 			border-radius:20px;
 		}
 
-		input{
-			color:black;
-			width:80%;
-			padding:10px;
+		#email-form{
 			margin-top:10px;
-		}
 
-		button{
-			background-color:blue;
-			color:white;
-			border:none;
-			padding:14px;
-			border-radius:10px;
-			width:100px;
+			input{
+				color:white;
+				width:60%;
+				padding:0px 20px;
+			  	background:rgba(255, 255, 255, 0.3);	
+			  	border:none;	
+			  	height:45px;
+			  	vertical-align:top;
+			  	display:inline-block;
+			  	border-top-left-radius: 10px;
+			  	border-bottom-left-radius: 10px;			  	
+			}
+
+			button{
+				background-color:#00509e;
+				color:white;
+				border:none;
+				padding:14px;
+				height:45px;
+			  	display:inline-block;
+			  	margin:0 0 2px -4px;
+			  	vertical-align:top;
+			  	border-top-right-radius: 10px;
+			  	border-bottom-right-radius: 10px;	
+			  -webkit-transition:.5s;
+			  -moz-transition:.5s;
+			  transition:.5s;			  					  	
+			}
+
+			button:hover{
+				background-color:#1958b4;			
+			}
 		}
 	}
 
 	nav{
+
+		img{
+			display:inline-block;
+			float:left;
+			padding:20px 30px;
+			width:200px;
+		}
+
 		ul{
 		  position:fixed;
 		  z-index:1000;
@@ -82,15 +115,16 @@
 		  -webkit-transition:.5s;
 		  -moz-transition:.5s;
 		  transition:.5s;
-		  text-align:right
+		  padding:0;
 		}
-		 ul.active{
+		ul.active{
 		  background:rgba(0,0,0,0.5);
 		  color:#fff;
 		}
-		 ul li{
+		ul li{
 		  display:inline-block;
 		  padding:20px 30px;
+		  float:right;
 		}
 		section{
 		  padding:100px 50px 50px;
@@ -99,4 +133,11 @@
 
 	}
 
+}
+
+#about {
+	
+	h1{
+		text-align:center;
+	}
 }
