@@ -7,7 +7,6 @@
 	height:100%;
 	overflow:hidden;
 	background-color:black;
-	background-image:url('https://ikushum.herokuapp.com/static/img/cover4.jpg');
 	background-position:center;
 	background-repeat:no-repeat;
 	-webkit-background-size: cover;
@@ -22,8 +21,8 @@
 
 	#header-text{
 		position: relative;
-		top: 40%;
-		transform: translateY(-40%);
+		top: 25%;
+		transform: translateY(-25%);
 
 		h1{
 			margin:0;
@@ -47,7 +46,6 @@
 		}
 
 		span{
-			font-size:15px;
 			margin-bottom:10px;
 		}
 
@@ -97,7 +95,7 @@
 		}
 	}
 
-	nav{
+	nav{	
 
 		img{
 			display:inline-block;
@@ -107,7 +105,7 @@
 		}
 
 		ul{
-		  position:fixed;
+		  position:absolute;
 		  z-index:1000;
 		  width:100%;
 		  color:white;
@@ -117,10 +115,7 @@
 		  transition:.5s;
 		  padding:0;
 		}
-		ul.active{
-		  background:rgba(0,0,0,0.5);
-		  color:#fff;
-		}
+
 		ul li{
 		  display:inline-block;
 		  padding:20px 30px;
@@ -130,14 +125,102 @@
 		  padding:100px 50px 50px;
 		  line-height:140%;
 		}	
-
 	}
-
 }
 
-#about {
-	
-	h1{
+#content{
+	position: absolute;
+	top: 100%;
+
+	.feature-box{
+		padding:100px 0;
+
+		.feature-image{
+			padding:0 50px;
+			display:inline-block;
+			vertical-align:top;
+			width:45%;
+		}
+
+		.feature-description{
+			width:50%;
+			display:inline-block;
+			vertical-align:top;
+			line-height:40px;			
+
+			.feature-title{
+				font-weight:bold;
+				text-align:center;
+				padding:0px 20px;
+			}
+
+			.feature-detail{
+				width:80%;
+				margin:0 auto;
+				color:grey;
+				text-align:center;
+				font-size:20px;
+			}
+		}
+	}
+
+	.middle-box{
+		background-color:#00ade5;
 		text-align:center;
+		padding:100px 0;
+		color:white;
+
+		#email-form{
+			margin-top:10px;
+
+			input{
+				color:#00509e;
+				width:40%;
+				padding:0px 20px;
+			  	background:rgba(255, 255, 255, 0.9);	
+			  	border:none;	
+			  	height:45px;
+			  	vertical-align:top;
+			  	display:inline-block;
+			  	border-top-left-radius: 10px;
+			  	border-bottom-left-radius: 10px;			  	
+			}
+
+			button{
+				background-color:#00509e;
+				color:white;
+				border:none;
+				padding:14px;
+				height:45px;
+			  	display:inline-block;
+			  	margin:0 0 2px -4px;
+			  	vertical-align:top;
+			  	border-top-right-radius: 10px;
+			  	border-bottom-right-radius: 10px;	
+			  -webkit-transition:.5s;
+			  -moz-transition:.5s;
+			  transition:.5s;			  					  	
+			}
+		}
 	}
+
 }
+
+#footer{
+	background-color:#393535;
+	padding:40px;
+	margin-top:90px;
+}
+
+text.footer{
+	padding:0px;
+	display:table;
+	margin:0px auto;
+	text-align:center;
+	font-size:15px;
+	color:#EFE9E9;
+	line-height:3px;
+	border:none;
+	font-weight:normal;
+}
+
