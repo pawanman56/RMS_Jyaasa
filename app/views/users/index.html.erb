@@ -21,9 +21,9 @@
 			</div>
 			<div class="collapse navbar-collapse">
 				<ul class="nav navbar-nav pull-right">
-					<li class="active"><a href="#feature-box">Features</a></li>
-					<li><%= link_to "About Us" %></li>
-					<li><%= link_to "Contact Us" %></li>
+					<li class="active"><%= link_to "Features", root_path(:anchor => "feature-box") %></li>
+					<li><%= link_to "About Us", root_path(:anchor => "footer") %></li>
+					<li><%= link_to "Contact Us", root_path(:anchor => "middle-box") %></li>
 				</ul>
 			</div> 
 		</div>
@@ -55,7 +55,7 @@
 		<p> We are an <b> Online Recruitment Platform </b> committed to help Businesses and Teams wanting to <b> Level Up </b> their <b> Hiring Process </b> by easing the workload of recruiters. </p>
 	</div>	
 
-	<div class="feature-box">
+	<div class="feature-box" id="feature-box">
 		<img class="feature-image" src="/assets/user_interface.png">
 		<div class="feature-description">
 			<h2 class="feature-title secondary-blue"> Marvellous User Experience </h2>
@@ -71,7 +71,7 @@
 		<img class="feature-image" src="assets/phases.png">
 	</div>	
 
-	<div class='parallex-window' data-parallax="scroll" data-image-src="assets/header.jpg">
+	<div class="parallex-window" data-parallax="scroll" data-image-src="assets/header.jpg">
 		<div class="middle-box-wrapper">
 			<h1> '' Never miss out on great colleagues because time was not right '' </h1>
 		</div>		
@@ -93,7 +93,7 @@
 		<img class="feature-image" src="assets/cloud_based.png">
 	</div>	
 
-	<div class='middle-box'>
+	<div class="middle-box" id="middle-box">
 		<div class="middle-box-wrapper">
 			<h1> Already in love with Smart Hire Pro ? </h1>
 			<text style=color:white> Leave us your email and get invited once we're live. </text>
@@ -110,12 +110,11 @@
 		</div>		
 	</div>		
 
-<div id="footer" style="margin-top:0px;">
-	<text class="footer"> &#169 2017 Jyaasa </text> <br>
-	<text class="footer"> All rights reserved </text> <br>
-	<text class="footer"> Further details: jyassa@gmail.com </text>
-
-</div>	
+	<div id="footer" style="margin-top:0px;">
+		<text class="footer"> &#169 2017 Jyaasa </text> <br>
+		<text class="footer"> All rights reserved </text> <br>
+		<text class="footer"> Further details: jyassa@gmail.com </text>
+	</div>	
 
 </div>
 
