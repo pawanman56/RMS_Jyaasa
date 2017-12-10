@@ -5,8 +5,13 @@ $primary-font: 'Open Sans', sans-serif;
 /*--- Colors ---*/
 $primary-blue: #004853;
 $secondary-blue: #326c75;
+$primary-blue-triad-1: #885D00;
+$primary-blue-triad-2: #880A00;
 $primary-red: #F63700;
 $secondary-red: #f75e32;
+$primary-red-triad-1: #08689C;
+$primary-red-triad-2: #74DE00;
+
 
 body {
   margin: 0;
@@ -39,8 +44,6 @@ body {
 }
 
 
-
-
 /*--- Login Page ---*/
 .app_title {
   font-family: $title-font;
@@ -58,7 +61,6 @@ body {
 form.new_user,
 form.edit_user {
   margin: 25px 0;
-  
   .field {
     margin-bottom: 15px;
 
