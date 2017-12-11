@@ -21,13 +21,21 @@
 	display: block;
 	z-index:0;
 	background-image: url('header.jpg');
+	background-attachment: fixed;
 	text-align: center;
 	font-family: 'Raleway', sans-serif;
 
 	.navbar {
 		.container-fluid .navbar-header {
 			a.navbar-brand {
+				padding: 0;
+			}
 
+			a.navbar-brand img {
+				display: inline-block;
+				float: left;
+				padding: 0 30px;
+				height: 100%;
 			}
 
 			button.navbar-toggle {
@@ -38,6 +46,11 @@
 		}
 
 		.container-fluid .collapse.navbar-collapse {
+			ul.nav.navbar-nav.pull-right li a {
+				font-size: 1.15em;
+				font-weight: 900;
+			}
+
 			ul.nav.navbar-nav.pull-right li a:hover {
 				background: none;
 				color: $primary-red;
@@ -415,6 +428,10 @@ text.footer {
 }
 
 @media screen and (max-width: 425px) {
+	#header #header-text {
+		top: 15%;
+	}
+
 	#header-text #header-text-2 {
 		p {
 			margin: 0 0 15px;
